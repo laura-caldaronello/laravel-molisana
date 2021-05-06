@@ -1,64 +1,31 @@
 /* variabili */
-$colors: (
-    'color-1': black,
-    'color-2': #B3E5FC
-);
+@import "partials/_variables";
 /* /variabili */
 
 /* mixins */
-@mixin flex-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+@import "partials/_mixins";
 /* /mixins */
 
 /* preliminari */
-body {
-    font-family: 'Teko', sans-serif;
-    font-size: 1.5em;
-    font-weight: 100;
-}
+@import "partials/_pre";
 /* preliminari */
 
 /* generali */
-.wrapper {
-    width: 80%;
-    margin: 0 auto;
-}
+@import "partials/_general";
 /* /generali */
 
 /* specifici */
 
 /* header */
-header {
-    img {
-        display: block;
-        margin: 0 auto;
-    }
-    nav {
-        ul {
-            @include flex-center;
-            li {
-                display: inline-block;
-                list-style: none;
-                padding: 10px;
-                &:hover {
-                    background-color: map-get($colors,'color-2');
-                }
-                a {
-                    text-transform: capitalize;
-                    text-decoration: none;
-                    color: map-get($colors,'color-1');
-                }
-            }
-        }
-    }
-}
+@import "partials/_header";
 /* /header */
 
-/* footer */
+/* main */
+@import "partials/_main";
+/* /main */
 
+/* footer */
+@import "partials/_footer";
 /* footer */
 
 /* /specifici */

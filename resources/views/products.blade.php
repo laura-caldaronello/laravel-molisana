@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('titoloPagina','Products')
+
 @section('content')
     pagina di prodotti
     @foreach ($pastas as $pasta)

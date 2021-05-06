@@ -1,0 +1,6 @@
+footer {
+    .wrapper {
+        @include flex-center;
+        @include lists;
+    }
+}

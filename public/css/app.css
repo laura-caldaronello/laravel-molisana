@@ -34,20 +34,8 @@ header img {
   margin: 0 auto;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 header nav ul li {
-  display: inline-block;
   list-style: none;
-  padding: 10px;
-}
-
-header nav ul li:hover {
-  background-color: #B3E5FC;
 }
 
 header nav ul li a {
@@ -56,9 +44,44 @@ header nav ul li a {
   color: black;
 }
 
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+header nav ul li:hover {
+  background-color: #B3E5FC;
+}
+
 /* /header */
 
+/* main */
+
+/* /main */
+
 /* footer */
+
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .wrapper ul li {
+  list-style: none;
+}
+
+footer .wrapper ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
 
 /* footer */
 
