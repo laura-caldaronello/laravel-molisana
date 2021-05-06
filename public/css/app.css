@@ -8,6 +8,12 @@
 
 /* preliminari */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Teko", sans-serif;
   font-size: 1.5em;
@@ -62,6 +68,72 @@ header nav ul li:hover {
 /* /header */
 
 /* main */
+
+main {
+  padding: 20px;
+  background-color: #B3E5FC;
+}
+
+main h1 {
+  margin: 10px;
+  text-align: center;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+/* products */
+
+.tipo-container {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+
+.tipo-container .pasta-container {
+  position: relative;
+  width: calc((100% / 3) - 20px);
+  float: left;
+  text-align: center;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.tipo-container .pasta-container img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.tipo-container .pasta-container:hover img {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.tipo-container .pasta-container:hover .pasta-layover {
+  visibility: visible;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.tipo-container .pasta-container .pasta-layover {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+.tipo-container .pasta-container .pasta-layover p {
+  width: 100%;
+  position: absolute;
+  bottom: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* /products */
 
 /* /main */
 
