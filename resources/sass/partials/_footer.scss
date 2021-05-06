@@ -1,6 +1,55 @@
 footer {
+    padding: 20px;
     .wrapper {
-        @include flex-center;
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
         @include lists;
+        h4 {
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-top: 20px;
+            &.special-h4 {
+                a {
+                    color: map-get($colors,'color-4')
+                }
+            }
+            a {
+                text-decoration: none;
+                color: map-get($colors,'color-1');
+            }
+        }
+        div:first-child,
+        div:last-child {
+            padding: 20px;
+        }
+        ul {
+            li {
+                font-size: 0.8em;
+                font-weight: 100;
+                a {
+                    color: map-get($colors,'color-4');
+                }
+            }
+        }
+        .special-list {
+            li {
+                list-style-type: '>> ';
+                margin-left: 20px;
+                color: map-get($colors,'color-4');
+                a {
+                    font-size: 0.7em;
+                    text-transform: uppercase;
+                    color: map-get($colors,'color-4');
+                }
+            }
+        }
+        .special-list-2 {
+            li {
+                font-size: 0.6em;
+                text-transform: uppercase;
+                color: map-get($colors,'color-4');
+            }
+        }
     }
 }

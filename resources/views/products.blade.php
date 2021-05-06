@@ -3,7 +3,7 @@
 @section('titoloPagina','Products')
 
 @section('content')
-    <main>
+    <main id="main-products">
         @foreach ($types as $type)
         <h1>la {{$type}}</h1>
         <div class="tipo-container">

@@ -69,20 +69,39 @@ header nav ul li:hover {
 
 /* main */
 
-main {
+/* home */
+
+main#main-home img {
+  width: 100%;
+}
+
+/* /home */
+
+/* news */
+
+main#main-news h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 50px;
+}
+
+/* /news */
+
+/* products */
+
+main#main-products {
   padding: 20px;
   background-color: #B3E5FC;
 }
 
-main h1 {
+main#main-products h1 {
   margin: 10px;
   text-align: center;
   font-weight: 200;
   text-transform: uppercase;
   font-size: 3em;
 }
-
-/* products */
 
 .tipo-container {
   content: "";
@@ -139,10 +158,14 @@ main h1 {
 
 /* footer */
 
+footer {
+  padding: 20px;
+}
+
 footer .wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
 }
 
 footer .wrapper ul li {
@@ -153,6 +176,53 @@ footer .wrapper ul li a {
   text-transform: capitalize;
   text-decoration: none;
   color: black;
+}
+
+footer .wrapper h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+footer .wrapper h4.special-h4 a {
+  color: grey;
+}
+
+footer .wrapper h4 a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .wrapper div:first-child,
+footer .wrapper div:last-child {
+  padding: 20px;
+}
+
+footer .wrapper ul li {
+  font-size: 0.8em;
+  font-weight: 100;
+}
+
+footer .wrapper ul li a {
+  color: grey;
+}
+
+footer .wrapper .special-list li {
+  list-style-type: ">> ";
+  margin-left: 20px;
+  color: grey;
+}
+
+footer .wrapper .special-list li a {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: grey;
+}
+
+footer .wrapper .special-list-2 li {
+  font-size: 0.6em;
+  text-transform: uppercase;
+  color: grey;
 }
 
 /* footer */

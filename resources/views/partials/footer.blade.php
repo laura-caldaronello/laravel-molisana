@@ -4,6 +4,7 @@
             <img src="{{asset('img/logo.png')}}" alt="logo molisana">
         </div>
         <div>
+            <h4>pastificio</h4>
             <ul>
                 <li>
                     <a href="">il pastificio</a>
@@ -30,6 +31,8 @@
                     <a href="">le persone</a>
                 </li>
             </ul>
+
+            <h4>prodotti</h4>
             <ul>
                 <li>
                     <a href="">le classiche</a>
@@ -55,6 +58,7 @@
             </ul>
         </div>
         <div>
+            <h4>collezione da chef</h4>
             <ul>
                 <li>
                     <a href="">collezione da chef</a>
@@ -69,6 +73,15 @@
                     <a href="">quadrate</a>
                 </li>
             </ul>
+
+            <h4 class="special-h4">
+                <a href="">limited edition</a>
+            </h4>
+
+            <h4 class="special-h4">
+                <a href="">news</a>
+            </h4>
+
             <ul class="special-list">
                 <li>
                     <a href="">e-commerce</a>
@@ -106,7 +119,11 @@
             </ul>
         </div>
         <div>
-            numero verde ecc
+            <ul class="special-list-2">
+                <li>ragione sociale: la molisana s.p.a.</li>
+                <li>sede legale: lorem ipsum</li>
+                <li>pec: lorem ipsum</li>
+            </ul>
         </div>
     </div>
 </footer>

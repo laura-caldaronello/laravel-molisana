@@ -4,12 +4,6 @@
     clear: both;
 }
 
-@mixin flex-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 @mixin lists {
     ul {
         li {
