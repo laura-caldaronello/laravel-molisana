@@ -1,0 +1,66 @@
+/* variabili */
+
+/* /variabili */
+
+/* mixins */
+
+/* /mixins */
+
+/* preliminari */
+
+body {
+  font-family: "Teko", sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+/* preliminari */
+
+/* generali */
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* /generali */
+
+/* specifici */
+
+/* header */
+
+header img {
+  display: block;
+  margin: 0 auto;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+}
+
+header nav ul li:hover {
+  background-color: #B3E5FC;
+}
+
+header nav ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
+
+/* /header */
+
+/* footer */
+
+/* footer */
+
+/* /specifici */
+
