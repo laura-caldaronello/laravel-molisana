@@ -27,11 +27,18 @@ Route::get('/prodotti', function () {
         'pastas' => $pastas
     ];
     $data['types'] = [];
+
     foreach ($data['pastas'] as $pasta) {
         if (!in_array($pasta['tipo'],$data['types'])) {
-            $data['types'][] = $pasta['tipo'];
-        }
+            $data['types'][$pasta['tipo']] = [];
+        };
     };
+    foreach ($data['pastas'] as $k => $pasta) {
+        $pastaWithId = $pasta;
+        $pastaWithId['id'] = $k;
+        $data['types'][$pasta['tipo']][] = $pastaWithId;
+    };
+
     return view('products',$data);
 })->name('pagina-prodotti');
 
