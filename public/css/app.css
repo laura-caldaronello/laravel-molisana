@@ -61,7 +61,8 @@ header nav ul li {
   padding: 10px;
 }
 
-header nav ul li:hover {
+header nav ul li:hover,
+header nav ul li.active {
   background-color: #B3E5FC;
 }
 
