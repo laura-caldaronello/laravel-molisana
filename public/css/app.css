@@ -144,12 +144,14 @@ main#main-products h1 {
   background-color: white;
 }
 
-.tipo-container .pasta-container .pasta-layover p {
+.tipo-container .pasta-container .pasta-layover a {
   width: 100%;
   position: absolute;
   bottom: 60%;
   left: 50%;
   transform: translateX(-50%);
+  text-decoration: none;
+  color: black;
 }
 
 /* /products */

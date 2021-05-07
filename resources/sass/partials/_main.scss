@@ -60,12 +60,14 @@ main#main-products {
             height: 100%;
             position: absolute;
             background-color: map-get($colors,'color-3');
-            p {
+            a {
                 width: 100%;
                 position: absolute;
                 bottom: 60%;
                 left: 50%;
                 transform: translateX(-50%);
+                text-decoration: none;
+               color: map-get($colors,'color-1');
             }
         }
     }

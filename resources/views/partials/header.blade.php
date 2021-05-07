@@ -4,13 +4,13 @@
         <nav>
             <ul>
                 <li>
-                    <a href="/">home</a>
+                    <a href="{{route('pagina-home')}}">home</a>
                 </li>
                 <li>
-                    <a href="/news">news</a>
+                    <a href="{{route('pagina-news')}}">news</a>
                 </li>
                 <li>
-                    <a href="/prodotti">prodotti</a>
+                    <a href="{{route('pagina-prodotti')}}">prodotti</a>
                 </li>
             </ul>
         </nav>
