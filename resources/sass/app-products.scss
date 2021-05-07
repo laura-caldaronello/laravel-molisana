@@ -1,0 +1,31 @@
+/* variabili */
+@import "partials/_variables";
+/* /variabili */
+
+/* mixins */
+@import "partials/_mixins";
+/* /mixins */
+
+/* preliminari */
+@import "partials/_pre";
+/* preliminari */
+
+/* generali */
+@import "partials/_general";
+/* /generali */
+
+/* specifici */
+
+/* header */
+@import "partials/_header";
+/* /header */
+
+/* main */
+@import "partials/main/_products";
+/* /main */
+
+/* footer */
+@import "partials/_footer";
+/* footer */
+
+/* /specifici */

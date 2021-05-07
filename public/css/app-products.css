@@ -1,0 +1,215 @@
+/* variabili */
+
+/* /variabili */
+
+/* mixins */
+
+/* /mixins */
+
+/* preliminari */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Teko", sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+/* preliminari */
+
+/* generali */
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* /generali */
+
+/* specifici */
+
+/* header */
+
+header img {
+  display: block;
+  margin: 0 auto;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+header nav ul li:hover,
+header nav ul li.active {
+  background-color: #B3E5FC;
+}
+
+/* /header */
+
+/* main */
+
+/* products */
+
+main#main-products {
+  padding: 20px;
+  background-color: #B3E5FC;
+}
+
+main#main-products h1 {
+  margin: 10px;
+  text-align: center;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.tipo-container {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+
+.tipo-container .pasta-container {
+  position: relative;
+  width: calc((100% / 3) - 20px);
+  float: left;
+  text-align: center;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.tipo-container .pasta-container img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.tipo-container .pasta-container:hover img {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.tipo-container .pasta-container:hover .pasta-layover {
+  visibility: visible;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.tipo-container .pasta-container .pasta-layover {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+.tipo-container .pasta-container .pasta-layover a {
+  width: 100%;
+  position: absolute;
+  bottom: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: black;
+}
+
+/* /products */
+
+/* /main */
+
+/* footer */
+
+footer {
+  padding: 20px;
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+footer .wrapper ul li {
+  list-style: none;
+}
+
+footer .wrapper ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
+
+footer .wrapper h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+footer .wrapper h4.special-h4 a {
+  color: grey;
+}
+
+footer .wrapper h4 a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .wrapper div:first-child,
+footer .wrapper div:last-child {
+  padding: 20px;
+}
+
+footer .wrapper ul li {
+  font-size: 0.8em;
+  font-weight: 100;
+}
+
+footer .wrapper ul li a {
+  color: grey;
+}
+
+footer .wrapper .special-list li {
+  list-style-type: ">> ";
+  margin-left: 20px;
+  color: grey;
+}
+
+footer .wrapper .special-list li a {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: grey;
+}
+
+footer .wrapper .special-list-2 li {
+  font-size: 0.6em;
+  text-transform: uppercase;
+  color: grey;
+}
+
+/* footer */
+
+/* /specifici */
+

@@ -70,14 +70,6 @@ header nav ul li.active {
 
 /* main */
 
-/* home */
-
-main#main-home img {
-  width: 100%;
-}
-
-/* /home */
-
 /* news */
 
 main#main-news h1 {
@@ -88,74 +80,6 @@ main#main-news h1 {
 }
 
 /* /news */
-
-/* products */
-
-main#main-products {
-  padding: 20px;
-  background-color: #B3E5FC;
-}
-
-main#main-products h1 {
-  margin: 10px;
-  text-align: center;
-  font-weight: 200;
-  text-transform: uppercase;
-  font-size: 3em;
-}
-
-.tipo-container {
-  content: "";
-  display: table;
-  clear: both;
-  width: 100%;
-}
-
-.tipo-container .pasta-container {
-  position: relative;
-  width: calc((100% / 3) - 20px);
-  float: left;
-  text-align: center;
-  margin: 10px;
-  overflow: hidden;
-}
-
-.tipo-container .pasta-container img {
-  width: 100%;
-  transition: 0.5s;
-}
-
-.tipo-container .pasta-container:hover img {
-  transform: scale(1.2);
-  transition: 0.5s;
-}
-
-.tipo-container .pasta-container:hover .pasta-layover {
-  visibility: visible;
-  cursor: pointer;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-.tipo-container .pasta-container .pasta-layover {
-  visibility: hidden;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: white;
-}
-
-.tipo-container .pasta-container .pasta-layover a {
-  width: 100%;
-  position: absolute;
-  bottom: 60%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-decoration: none;
-  color: black;
-}
-
-/* /products */
 
 /* /main */
 

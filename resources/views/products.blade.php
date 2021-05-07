@@ -2,6 +2,10 @@
 
 @section('titoloPagina','Products')
 
+@section('css')
+    <link rel="stylesheet" href="{{asset('css/app-products.css')}}">
+@endsection
+
 @section('content')
     <main id="main-products">
         @foreach ($types as $name => $type)
